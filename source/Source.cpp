@@ -143,4 +143,9 @@ void Radix_sort(int arr[], int n) {
             count[(arr[i] / exp) % 10]--;
         }
 
-        // C
+        // Cập nhật lại mảng ban đầu với kết quả sau khi sắp xếp theo chữ số
+        for (int i = 0; i < n; i++) {
+            arr[i] = output[i];
+        }
+    }
+}
